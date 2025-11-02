@@ -15,7 +15,8 @@ INSERT INTO tig.ExpenseCategoryResponsibles (ExpenseCategory, FullName, Role, Ph
 ('Accommodation', 'Bob Smith', 'Accommodation Manager', '+1-555-2345', 'CST'),
 ('Meals', 'Carol Lee', 'Meal Expense Supervisor', '+1-555-3456', 'PST'),
 ('Entertainment', 'David Kim', 'Events Lead', '+1-555-4567', 'MST'),
-('Office Supplies', 'Eva Brown', 'Office Supplies Admin', '+1-555-5678', 'EST');
+('Office Supplies', 'Eva Brown', 'Office Supplies Admin', '+1-555-5678', 'EST'),
+('Expense Claim', 'Sandra White', 'Expense Claim Manager', '+1-555-9012', 'EST');
 
 -- Create Address table mapped to ExpenseCategoryResponsibles
 CREATE TABLE tig.Address (
@@ -29,12 +30,14 @@ CREATE TABLE tig.Address (
 );
 
 -- Insert one address row per responsible person (example data)
+-- DROP TABLE tig.Address
 INSERT INTO tig.Address (ResponsibleID, AddressLine1, City, StateProvince, CountryRegion, PostalCode) VALUES
 (1, '8713 Yosemite Ct.', 'Bothell', 'Washington', 'United States', '98011'),      -- Alice Johnson
 (2, '1318 Lasalle Street', 'Bothell', 'Washington', 'United States', '98012'),    -- Bob Smith
 (3, '9178 Jumping St.', 'Dallas', 'Texas', 'United States', '75201'),             -- Carol Lee
 (4, '2222 Conference Ave.', 'Denver', 'Colorado', 'United States', '80202'),      -- David Kim
-(5, '5555 Office Park Blvd.', 'Atlanta', 'Georgia', 'United States', '30303');    -- Eva Brown
+(5, '5555 Office Park Blvd.', 'Atlanta', 'Georgia', 'United States', '30303'),    -- Eva Brown
+(6, '8000 Reimbursement Ave.', 'Charlotte', 'North Carolina', 'United States', '28202'); -- Sandra White
 
 
 -- Query to verify mapping
