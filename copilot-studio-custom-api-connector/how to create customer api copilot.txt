@@ -1,0 +1,50 @@
+how to create customer api copilot studio
+
+1: download the 2 json files from https://github.com/jeandjoseph/ZavaMaketingDetails/tree/main
+
+2: create a new GitHub repository from skillable business account. 
+
+3: then upload marketing_data.json file to the new created GitHub repository. note if changed the name for marketing_data.json, you also has to change it on the zava_openapi_config.json file
+
+4: open zava_openapi_config.json and look for url section then replace only this part of the url 'jeandjoseph/ZavaMaketingDetails/main/' and make sure 'https://raw.githubusercontent.com/' is part of the new raw GitHub repository url. the url format should be same as you had it before replace the old url value. 
+
+5: go to https://copilotstudio.microsoft.com/
+
+6: Click on tools or open your agent then click on tools
+
+7: Click on New tool then click on Custom connector
+
+8: Make sure you are on the right environment
+
+9: Click on New custom connector
+
+10: choose import an OpenAPI file then call it ZavaOpenAPICall
+
+11: Click on Import an OpenAPI file.
+
+12: Click on continue then on create connector
+
+13: go back to copilot studio, close the New tool if its still opened then refresh the page. make sure you save your works
+
+14: you should see it under tool or access your agent tool to see it
+
+15: add the openai tool to the agent. click on add a tool
+
+16: search for ZavaOpenAPICall, click on it then click on Not connected dropdown
+
+17: create a new connection then click on create
+
+18: click on add and configure wait until the process is completed.
+
+19: go to settings then connection Settings, click on connect on your new created tool then click on submit wait until you see connected
+
+20: go back to copilot studio to test the custom openapi connector
+
+21: type: what of Promotions marketing do we have then observe
+
+
+
+
+
+
+
